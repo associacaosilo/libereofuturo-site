@@ -131,15 +131,24 @@ b, strong {
     
         .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background: #605B47; }
 
+.parallax-image {
+    background-image: url(../i/capa.png);
+    height: 1500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Header 2 */
 .header_2 {
-  background: #111111 url(../i/header_2_bg.jpg) no-repeat no-repeat 50% 50%;
+  background: #111111 url(../i/capa.png) no-repeat no-repeat 50% 50%;
   background-size: cover;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .header_2 {
-    background-image: url(../i/header_2_bg_2x.jpg);
+    background-image: url(../i/capa.png);
   }
 }
 
