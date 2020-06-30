@@ -47,7 +47,7 @@ a {
 }
 
 a:hover {
-  color: #4a6580;
+  color: #E06025;
   text-decoration: none;
 }
 
@@ -121,19 +121,46 @@ b, strong {
   position: relative;
 }
 
-.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
-    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#605B47;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
-    
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background: #605B47; }
+.MultiCarousel { 
+    float: left; 
+    overflow: hidden; 
+    padding: 15px;
+    width: 100%; 
+    position:relative; 
+}
+.MultiCarousel .MultiCarousel-inner { 
+    transition: 1s ease all; 
+    float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item { 
+    float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div { 
+    text-align: center;  
+    margin:10px; 
+    background:#958C6D; 
+    color:#605B47;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+    position:absolute;
+    height: 45px;
+    border-radius: 50%;
+    top:calc(50% - 30px); 
+}
+.MultiCarousel .leftLst { 
+    left:0; 
+}
+.MultiCarousel .rightLst { 
+    right:0; 
+}   
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+    pointer-events: none; 
+    background: #605B47; 
+}
 
 .parallax-image {
-    background-image: url(../i/capa.png);
-    height: 1500px;
+    background-image: url(../i/fundo.svg);
+    height: 2500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -148,7 +175,7 @@ b, strong {
 
 @media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
   .header_2 {
-    background-image: url(../i/capa.png);
+    background-image: url(../i/SLIDER.jpg);
   }
 }
 
@@ -514,7 +541,7 @@ b, strong {
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1000;
-  background: #000000;
+/*  background: #000000;*/
   -webkit-transition: width 0.2s;
   -o-transition: width 0.2s;
   transition: width 0.2s;
@@ -2600,6 +2627,15 @@ b, strong {
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  .showcase_1 .title {
+    font-size: 20px;
+  }
+  .link {
+    padding-top: 5px;
+    font-size: 10px;
+  }
+}
 /* Showcase 2 */
 .showcase_2 .block a {
   cursor: pointer;
@@ -6723,6 +6759,9 @@ b, strong {
   }
   .header_3 .header_3_form .text a {
     display: block;
+  }
+  .header_3 .title {
+    font-size: 28px;
   }
   .header_6 h1 {
     font-size: 32px;
