@@ -9,8 +9,8 @@
 @font-face {
     font-family: 'Helvetica' ;
     src: url("../fonts/HelveticaNeueLTStd-HvEx.otf");
-    font-style: bold;
-    font-weight: 700;
+    font-style: black;
+    font-weight: 900;
 }
 
 /* Plaak */
@@ -9345,6 +9345,9 @@
 .dark_green {
   color: #605B47; }
 
+.dark{
+  color: #3E3B2E; }
+
 .blue {
   color: #2b48e7; }
   .blue.link {
@@ -9471,6 +9474,9 @@
 
 .bg_dark_green {
   background: #605B47; }
+
+.bg_dark {
+  background: #3E3B2E; }
 
 .bg_black {
   background: #050505; }
@@ -10495,6 +10501,7 @@ input[type=radio]:checked + label.radio.check_blue:before {
     color: #ffffff; }
 
 /* Video block */
+
 .video {
   position: relative;
   overflow: hidden; }
@@ -10530,7 +10537,7 @@ input[type=radio]:checked + label.radio.check_blue:before {
       transition: all 0.2s;
       z-index: 501; }
       .video .poster .play.red {
-        background: #ff0000;
+        background: #CD2129;
         color: #ffffff; }
         .video .poster .play.red:hover {
           background: #e10000; }
